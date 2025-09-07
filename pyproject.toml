@@ -4,14 +4,14 @@ build-backend = "hatchling.build"
 
 [project]
 name = "aiverify-moonshot"
-version = "0.7.4"
+version = "0.7.3"
 authors = [
     { name="AI Verify Foundation", email="info@aiverify.sg" }
 ]
 description = "AI Verify advances Gen AI testing with Project Moonshot."
 readme = "README.md"
 license = { text = "Apache-2.0" }
-requires-python = ">=3.11"
+requires-python = "==3.12.3"
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Programming Language :: Python :: 3",
@@ -31,6 +31,38 @@ dependencies = [
     "numpy~=1.26.4",
     "tenacity~=8.5.0",
     "python-multipart>=0.0.9",
+    "uvicorn>=0.35.0",
+    "dependency-injector>=4.48.1",
+    "fastapi>=0.116.1",
+    "ragas>=0.3.2",
+    "bert-score>=0.3.13",
+    "nltk>=3.9.1",
+    "spacy>=3.8.7",
+    "homoglyphs>=2.0.4",
+    "tensorflow>=2.18.1",
+    "torchmetrics>=1.8.1",
+    "textattack>=0.3.10",
+    "transformers>=4.55.2",
+    "torchvision>=0.23.0",
+    "pylcs>=0.1.1",
+    "nudenet>=3.4.2",
+    "sentence-transformers>=3.4.1",
+    "torch>=2.7.1",
+    "scikit-learn>=1.6.1",
+    "rouge-score>=0.1.2",
+    "py-readability-metrics>=1.4.5",
+    "opencv-python-headless>=4.11.0",
+    "pillow>=11.3.0",
+    "matplotlib>=3.10.1",
+    "seaborn>=0.13.0",
+    "anthropic>=0.45.2",
+    "openai>=1.76.0",
+    "google-generativeai>=0.8.5",
+    "boto3>=1.38.2",
+    "h2ogpte>=1.6.27",
+    "pip>=25.2",
+    "google-cloud-aiplatform>=1.91.0",
+    "together>=1.5.25",
 ]
 
 [project.optional-dependencies]
@@ -110,7 +142,7 @@ allow-direct-references = true
 
 [tool.poetry]
 name = "aiverify-moonshot"
-version = "0.7.4"
+version = "0.7.3"
 description = "A simple and modular tool to evaluate and red-team any LLM application."
 authors = ["The Moonshot Team <our.moonshot.team@gmail.com>"]
 readme = "README.md"
